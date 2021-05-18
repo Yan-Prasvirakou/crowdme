@@ -247,27 +247,20 @@
 </body>
 
 <script>
+
 	let menu = document.getElementById('menu');
 	let menuBtn = document.getElementById('menuBtn');
 	let closeMenuBtn = document.getElementById('closeMenu');
 
-
-	console.log(menu, menuBtn, closeMenuBtn);
 	menuBtn.addEventListener('click', function() {
-		// console.log(123)
 		menu.classList.add('deviceMenu');
-		console.log(menu.className);
-		console.log(closeMenuBtn);
 		document.body.style.overflowY = 'hidden';
-		// console.log(getComputedStyle(menu).display);
 	})
 
 	closeMenuBtn.addEventListener('click', function() {
 		menu.classList.remove('deviceMenu');
 		document.body.style.overflowY = 'scroll';
 	})
-
-	
 	
 </script>
 
